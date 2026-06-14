@@ -2,8 +2,6 @@
   class="hero-banner"
   {% if section.settings.image != blank %}
     style="--hero-image: url('{{ section.settings.image | image_url: width: 1800 }}');"
-  {% else %}
-    style="--hero-image: url('{{ 'claws-paws-hero.png' | asset_url }}');"
   {% endif %}
 >
   <div class="hero-banner__content">

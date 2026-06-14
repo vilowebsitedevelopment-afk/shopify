@@ -1,0 +1,35 @@
+<section class="product-page">
+  <div class="product-page__media">
+    {% if product.featured_image %}
+      {{ product.featured_image | image_url: width: 900 | image_tag: loading: 'eager', alt: product.featured_image.alt }}
+    {% endif %}
+  </div>
+
+  <div class="product-page__info">
+    <h1>{{ product.title }}</h1>
+    <p class="price">{{ product.price | money }}</p>
+
+    {% form 'product', product %}
+      <select name="id">
+        {% for variant in product.variants %}
+          <option value="{{ variant.id }}">
+            {{ variant.title }} - {{ variant.price | money }}
+          </option>
+        {% endfor %}
+      </select>
+
+      <button class="button" type="submit">Add to cart</button>
+    {% endform %}
+
+    <div class="product-description">
+      {{ product.description }}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Main product",
+  "settings": []
+}
+{% endschema %}

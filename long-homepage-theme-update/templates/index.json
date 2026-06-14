@@ -3,10 +3,10 @@
     "hero": {
       "type": "hero-banner",
       "settings": {
-        "eyebrow": "Love. Care. Family.",
-        "heading": "Everything your pet loves, delivered with care.",
-        "text": "Premium pet products, accessories, toys, treats, and essentials for every member of your furry family.",
-        "button_label": "Shop dogs",
+        "eyebrow": "Pet supplies for everyday care",
+        "heading": "Everything your pet needs, all in one place.",
+        "text": "Shop toys, treats, grooming essentials, and daily supplies for happy, healthy companions.",
+        "button_label": "Shop pet products",
         "button_link": "/collections/all"
       }
     },
@@ -123,34 +123,6 @@
         "heading": "Popular pet picks"
       }
     },
-    "brand_story": {
-      "type": "brand-story",
-      "settings": {
-        "eyebrow": "Claws & Paws",
-        "heading": "Love, care, and family for every pet.",
-        "text": "Claws & Paws is built around simple, thoughtful shopping for pets and the people who love them."
-      },
-      "blocks": {
-        "quality": {
-          "type": "point",
-          "settings": {
-            "heading": "Premium quality",
-            "text": "Curated essentials for comfort, play, wellness, and daily routines."
-          }
-        },
-        "approved": {
-          "type": "point",
-          "settings": {
-            "heading": "Pet-lover approved",
-            "text": "A warm shopping experience designed for dogs, cats, and happy homes."
-          }
-        }
-      },
-      "block_order": [
-        "quality",
-        "approved"
-      ]
-    },
     "promo": {
       "type": "promo-band",
       "settings": {
@@ -199,7 +171,6 @@
   "order": [
     "hero",
     "circles",
-    "brand_story",
     "categories",
     "featured",
     "promo",

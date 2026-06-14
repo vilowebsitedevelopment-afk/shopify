@@ -1,0 +1,15 @@
+[
+  {
+    "name": "Theme settings",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Velo Shopify starter"
+      },
+      {
+        "type": "paragraph",
+        "content": "This is a simple starter theme for learning Shopify Liquid, CSS, and JavaScript."
+      }
+    ]
+  }
+]
