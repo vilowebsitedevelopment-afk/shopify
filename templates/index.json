@@ -61,16 +61,119 @@
         "toys"
       ]
     },
+    "circles": {
+      "type": "circle-showcase",
+      "settings": {
+        "heading": "Browse favorites",
+        "text": "Quickly jump into the pet categories customers shop most."
+      },
+      "blocks": {
+        "dog_favorites": {
+          "type": "circle",
+          "settings": {
+            "fallback_text": "Dog",
+            "title": "Dog favorites",
+            "link": "/collections/all"
+          }
+        },
+        "cat_favorites": {
+          "type": "circle",
+          "settings": {
+            "fallback_text": "Cat",
+            "title": "Cat favorites",
+            "link": "/collections/all"
+          }
+        },
+        "treats_circle": {
+          "type": "circle",
+          "settings": {
+            "fallback_text": "Treats",
+            "title": "Treats",
+            "link": "/collections/all"
+          }
+        },
+        "grooming_circle": {
+          "type": "circle",
+          "settings": {
+            "fallback_text": "Care",
+            "title": "Grooming",
+            "link": "/collections/all"
+          }
+        },
+        "beds_circle": {
+          "type": "circle",
+          "settings": {
+            "fallback_text": "Beds",
+            "title": "Beds",
+            "link": "/collections/all"
+          }
+        }
+      },
+      "block_order": [
+        "dog_favorites",
+        "cat_favorites",
+        "treats_circle",
+        "grooming_circle",
+        "beds_circle"
+      ]
+    },
     "featured": {
       "type": "featured-products",
       "settings": {
         "heading": "Popular pet picks"
       }
+    },
+    "promo": {
+      "type": "promo-band",
+      "settings": {
+        "eyebrow": "New customer favorite",
+        "heading": "Treats, toys, and cozy picks for every tail wag.",
+        "text": "Build a care routine your pet loves with everyday essentials and fun extras.",
+        "button_label": "Explore the shop",
+        "button_link": "/collections/all"
+      }
+    },
+    "trust": {
+      "type": "trust-highlights",
+      "blocks": {
+        "care": {
+          "type": "highlight",
+          "settings": {
+            "label": "Care",
+            "heading": "Pet-first picks",
+            "text": "Products chosen for comfort, play, and everyday care."
+          }
+        },
+        "fast": {
+          "type": "highlight",
+          "settings": {
+            "label": "Fast",
+            "heading": "Easy shopping",
+            "text": "Simple browsing so customers can find essentials quickly."
+          }
+        },
+        "fresh": {
+          "type": "highlight",
+          "settings": {
+            "label": "Fresh",
+            "heading": "New finds",
+            "text": "Room to feature seasonal items, bundles, and new arrivals."
+          }
+        }
+      },
+      "block_order": [
+        "care",
+        "fast",
+        "fresh"
+      ]
     }
   },
   "order": [
     "hero",
+    "circles",
     "categories",
-    "featured"
+    "featured",
+    "promo",
+    "trust"
   ]
 }
