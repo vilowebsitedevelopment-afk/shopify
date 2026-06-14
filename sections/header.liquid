@@ -1,6 +1,17 @@
 <header class="site-header">
   <a class="site-logo" href="{{ routes.root_url }}">
-    {{ shop.name }}
+    {% if section.settings.logo != blank %}
+      {{ section.settings.logo | image_url: width: 240 | image_tag: alt: shop.name, class: 'site-logo__image' }}
+    {% else %}
+      <img
+        class="site-logo__image"
+        src="{{ 'claws-paws-logo.png' | asset_url }}"
+        alt="{{ shop.name }}"
+        width="120"
+        height="120"
+      >
+    {% endif %}
+    <span class="site-logo__text">{{ shop.name }}</span>
   </a>
 
   <nav class="site-nav" aria-label="Main navigation">
@@ -13,6 +24,12 @@
 {% schema %}
 {
   "name": "Header",
-  "settings": []
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "logo",
+      "label": "Logo"
+    }
+  ]
 }
 {% endschema %}
