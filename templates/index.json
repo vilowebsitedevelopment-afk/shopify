@@ -3,22 +3,74 @@
     "hero": {
       "type": "hero-banner",
       "settings": {
-        "eyebrow": "Velo Website Development",
-        "heading": "Build a cleaner Shopify store.",
-        "text": "A starter Shopify theme built with Liquid, CSS, and JavaScript.",
-        "button_label": "Shop now",
+        "eyebrow": "Pet supplies for everyday care",
+        "heading": "Everything your pet needs, all in one place.",
+        "text": "Shop toys, treats, grooming essentials, and daily supplies for happy, healthy companions.",
+        "button_label": "Shop pet products",
         "button_link": "/collections/all"
       }
+    },
+    "categories": {
+      "type": "pet-categories",
+      "settings": {
+        "heading": "Shop by pet need",
+        "text": "Find everyday essentials, playful extras, and care products for your favorite companion."
+      },
+      "blocks": {
+        "dogs": {
+          "type": "category",
+          "settings": {
+            "icon": "Dog",
+            "title": "Dog supplies",
+            "text": "Food, toys, collars, beds, and daily dog essentials.",
+            "link": "/collections/all"
+          }
+        },
+        "cats": {
+          "type": "category",
+          "settings": {
+            "icon": "Cat",
+            "title": "Cat supplies",
+            "text": "Scratchers, treats, litter tools, toys, and cozy favorites.",
+            "link": "/collections/all"
+          }
+        },
+        "treats": {
+          "type": "category",
+          "settings": {
+            "icon": "Treats",
+            "title": "Treats",
+            "text": "Rewards, snacks, chews, and tasty training helpers.",
+            "link": "/collections/all"
+          }
+        },
+        "toys": {
+          "type": "category",
+          "settings": {
+            "icon": "Toys",
+            "title": "Toys",
+            "text": "Fetch toys, plush favorites, puzzles, and playtime picks.",
+            "link": "/collections/all"
+          }
+        }
+      },
+      "block_order": [
+        "dogs",
+        "cats",
+        "treats",
+        "toys"
+      ]
     },
     "featured": {
       "type": "featured-products",
       "settings": {
-        "heading": "Featured products"
+        "heading": "Popular pet picks"
       }
     }
   },
   "order": [
     "hero",
+    "categories",
     "featured"
   ]
 }
