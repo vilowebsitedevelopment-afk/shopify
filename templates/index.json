@@ -1,0 +1,24 @@
+{
+  "sections": {
+    "hero": {
+      "type": "hero-banner",
+      "settings": {
+        "eyebrow": "Velo Website Development",
+        "heading": "Build a cleaner Shopify store.",
+        "text": "A starter Shopify theme built with Liquid, CSS, and JavaScript.",
+        "button_label": "Shop now",
+        "button_link": "/collections/all"
+      }
+    },
+    "featured": {
+      "type": "featured-products",
+      "settings": {
+        "heading": "Featured products"
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "featured"
+  ]
+}
