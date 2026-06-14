@@ -1,9 +1,4 @@
-<section
-  class="hero-banner"
-  {% if section.settings.image != blank %}
-    style="--hero-image: url('{{ section.settings.image | image_url: width: 1800 }}');"
-  {% endif %}
->
+<section class="hero-banner">
   <div class="hero-banner__content">
     {% if section.settings.eyebrow != blank %}
       <p class="eyebrow">{{ section.settings.eyebrow }}</p>
@@ -29,11 +24,6 @@
 {
   "name": "Hero banner",
   "settings": [
-    {
-      "type": "image_picker",
-      "id": "image",
-      "label": "Hero image"
-    },
     {
       "type": "text",
       "id": "eyebrow",

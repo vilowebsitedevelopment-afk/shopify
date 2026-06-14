@@ -1,0 +1,24 @@
+{
+  "sections": {
+    "hero": {
+      "type": "hero-banner",
+      "settings": {
+        "eyebrow": "Pet supplies for everyday care",
+        "heading": "Everything your pet needs, all in one place.",
+        "text": "Shop toys, treats, grooming essentials, and daily supplies for happy, healthy companions.",
+        "button_label": "Shop pet products",
+        "button_link": "/collections/all"
+      }
+    },
+    "featured": {
+      "type": "featured-products",
+      "settings": {
+        "heading": "Popular pet picks"
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "featured"
+  ]
+}

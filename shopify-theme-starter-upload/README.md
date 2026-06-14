@@ -1,6 +1,6 @@
-# Pet Store Shopify Theme Starter
+# Velo Shopify Theme Starter
 
-This is a beginner-friendly Shopify Online Store 2.0 theme starter for a pet store.
+This is a beginner-friendly Shopify Online Store 2.0 theme starter.
 
 ## What each folder does
 

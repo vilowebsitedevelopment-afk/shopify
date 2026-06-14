@@ -46,22 +46,15 @@ a {
 }
 
 .hero-banner {
-  position: relative;
   display: grid;
   place-items: center;
   min-height: 520px;
   padding: 80px 6%;
   color: #ffffff;
-  background:
-    linear-gradient(rgba(18, 55, 42, 0.74), rgba(18, 55, 42, 0.74)),
-    var(--hero-image, linear-gradient(135deg, #12372a, #1b8a5a));
-  background-position: center;
-  background-size: cover;
+  background: linear-gradient(135deg, #12372a, #1b8a5a);
 }
 
 .hero-banner__content {
-  position: relative;
-  z-index: 1;
   max-width: 760px;
   text-align: center;
 }
