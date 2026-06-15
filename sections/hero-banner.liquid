@@ -1,7 +1,9 @@
 <section
   class="hero-banner"
-  {% if section.settings.image != blank %}config
+  {% if section.settings.image != blank %}
     style="--hero-image: url('{{ section.settings.image | image_url: width: 1800 }}');"
+  {% else %}
+    style="--hero-image: url('{{ 'claws-paws-hero.png' | asset_url }}');"
   {% endif %}
 >
   <div class="hero-banner__content">
@@ -23,6 +25,20 @@
       </a>
     {% endif %}
   </div>
+
+  <div class="hero-banner__preview" aria-hidden="true">
+    {% if section.settings.image != blank %}
+      {{ section.settings.image | image_url: width: 900 | image_tag: loading: 'eager', alt: '' }}
+    {% else %}
+      <img
+        src="{{ 'claws-paws-hero.png' | asset_url }}"
+        alt=""
+        width="900"
+        height="450"
+        loading="eager"
+      >
+    {% endif %}
+  </div>
 </section>
 
 {% schema %}
@@ -38,25 +54,25 @@
       "type": "text",
       "id": "eyebrow",
       "label": "Small heading",
-      "default": "Pet supplies for everyday care"
+      "default": "Love. Care. Family."
     },
     {
       "type": "text",
       "id": "heading",
       "label": "Heading",
-      "default": "Everything your pet needs, all in one place."
+      "default": "Everything your pet loves, delivered with care."
     },
     {
       "type": "textarea",
       "id": "text",
       "label": "Text",
-      "default": "Shop toys, treats, grooming essentials, and daily supplies for happy, healthy companions."
+      "default": "Premium pet products, accessories, toys, treats, and essentials for every member of your furry family."
     },
     {
       "type": "text",
       "id": "button_label",
       "label": "Button label",
-      "default": "Shop pet products"
+      "default": "Shop dogs"
     },
     {
       "type": "url",
