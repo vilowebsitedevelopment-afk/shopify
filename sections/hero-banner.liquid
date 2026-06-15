@@ -2,8 +2,6 @@
   class="hero-banner"
   {% if section.settings.image != blank %}
     style="--hero-image: url('{{ section.settings.image | image_url: width: 1800 }}');"
-  {% else %}
-    style="--hero-image: url('{{ 'claws-paws-hero.png' | asset_url }}');"
   {% endif %}
 >
   <div class="hero-banner__content">
@@ -23,20 +21,6 @@
       <a class="button" href="{{ section.settings.button_link }}">
         {{ section.settings.button_label }}
       </a>
-    {% endif %}
-  </div>
-
-  <div class="hero-banner__preview" aria-hidden="true">
-    {% if section.settings.image != blank %}
-      {{ section.settings.image | image_url: width: 900 | image_tag: loading: 'eager', alt: '' }}
-    {% else %}
-      <img
-        src="{{ 'claws-paws-hero.png' | asset_url }}"
-        alt=""
-        width="900"
-        height="450"
-        loading="eager"
-      >
     {% endif %}
   </div>
 </section>

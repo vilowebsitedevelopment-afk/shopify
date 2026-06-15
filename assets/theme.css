@@ -61,14 +61,13 @@ a {
 .hero-banner {
   position: relative;
   display: grid;
-  grid-template-columns: minmax(0, 0.9fr) minmax(280px, 0.65fr);
+  place-items: center;
   align-items: center;
-  gap: 42px;
   min-height: 520px;
   padding: 80px 6%;
   color: #ffffff;
   background:
-    linear-gradient(90deg, rgba(251, 250, 244, 0.92), rgba(251, 250, 244, 0.4), rgba(18, 55, 42, 0.08)),
+    linear-gradient(rgba(18, 55, 42, 0.72), rgba(18, 55, 42, 0.72)),
     var(--hero-image, linear-gradient(135deg, #12372a, #1b8a5a));
   background-position: center;
   background-size: cover;
@@ -78,21 +77,8 @@ a {
   position: relative;
   z-index: 1;
   max-width: 680px;
-  color: #142033;
-  text-align: left;
-}
-
-.hero-banner__preview {
-  position: relative;
-  z-index: 1;
-  display: grid;
-  place-items: center;
-}
-
-.hero-banner__preview img {
-  max-height: 380px;
-  object-fit: contain;
-  border-radius: 8px;
+  color: #ffffff;
+  text-align: center;
 }
 
 .eyebrow {
@@ -490,14 +476,9 @@ a {
   }
 
   .hero-banner {
-    grid-template-columns: 1fr;
     background:
-      linear-gradient(rgba(251, 250, 244, 0.88), rgba(251, 250, 244, 0.88)),
+      linear-gradient(rgba(18, 55, 42, 0.76), rgba(18, 55, 42, 0.76)),
       var(--hero-image, linear-gradient(135deg, #12372a, #1b8a5a));
-  }
-
-  .hero-banner__content {
-    text-align: center;
   }
 
   .category-grid,
