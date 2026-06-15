@@ -31,10 +31,10 @@
       {{ section.settings.image | image_url: width: 900 | image_tag: loading: 'eager', alt: '' }}
     {% else %}
       <img
-        src="{{ 'claws-paws-logo.png' | asset_url }}"
+        src="{{ 'claws-paws-hero.png' | asset_url }}"
         alt=""
-        width="360"
-        height="360"
+        width="900"
+        height="450"
         loading="eager"
       >
     {% endif %}

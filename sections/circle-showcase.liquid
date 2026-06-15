@@ -16,7 +16,13 @@
           {% if block.settings.image != blank %}
             {{ block.settings.image | image_url: width: 420 | image_tag: loading: 'lazy', alt: block.settings.title }}
           {% else %}
-            <span>{{ block.settings.fallback_text }}</span>
+            <img
+              src="{{ 'claws-paws-logo.png' | asset_url }}"
+              alt=""
+              width="420"
+              height="420"
+              loading="lazy"
+            >
           {% endif %}
         </span>
         <span class="circle-card__title">{{ block.settings.title }}</span>
